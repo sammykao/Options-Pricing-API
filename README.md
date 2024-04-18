@@ -21,6 +21,20 @@ gRPC offers several performance advantages over traditional HTTP/HTTPS-based API
 - **Efficient serialization**: gRPC uses Protocol Buffers, which offers efficient binary serialization, resulting in smaller message sizes compared to JSON or XML-based serialization used in HTTP APIs.
 - **Streaming support**: gRPC supports both unary (single request, single response) and streaming (multiple requests or responses) RPCs, which can be more efficient for certain use cases compared to traditional request-response APIs.
 
+## Advantages of Heston and Variance Gamma Models
+
+While the Black-Scholes model is widely used for pricing financial options, it has certain limitations, especially when dealing with real-world market conditions. The Heston model and Variance Gamma model offer several advantages over the Black-Scholes model:
+
+- **Incorporating stochastic volatility**: The Heston model introduces stochastic volatility, which allows for more realistic modeling of volatility behavior in financial markets. Unlike the Black-Scholes model, which assumes constant volatility, the Heston model captures the tendency of volatility to fluctuate over time.
+  
+- **Capturing jumps and heavy tails**: The Variance Gamma model is capable of capturing jumps and heavy-tailed distributions in asset prices, which are often observed in financial markets. This allows for more accurate pricing of options, particularly in markets where extreme events are common.
+
+- **Flexible parameterization**: Both the Heston model and Variance Gamma model offer flexible parameterization, allowing traders and analysts to calibrate the models to historical data and market conditions more effectively. This flexibility can lead to more accurate pricing and risk management.
+
+- **Better fit for complex market scenarios**: In scenarios where the underlying asset exhibits non-normal or skewed distributions, or where volatility exhibits complex patterns such as mean reversion or time-varying dynamics, the Heston model and Variance Gamma model can provide better fit and predictive power compared to the simplistic assumptions of the Black-Scholes model.
+
+By incorporating these advanced modeling techniques, the Heston model and Variance Gamma model offer traders and analysts a more comprehensive framework for pricing options and managing risk in complex financial markets.
+
 ## Prerequisites
 
 Before running the server, ensure you have the following prerequisites installed:
