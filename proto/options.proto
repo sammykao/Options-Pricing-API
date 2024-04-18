@@ -1,0 +1,54 @@
+syntax = "proto3";
+
+package options;
+
+service OptionsService {
+    rpc PriceOptionScholes(ScholesOptionPricingRequest) returns (ScholesOptionPricingResponse) {}
+    rpc PriceOptionHeston(HestonOptionPricingRequest) returns (HestonOptionPricingResponse) {}
+    rpc PriceOptionVarianceGamma(VarianceGammaOptionPricingRequest) returns (VarianceGammaOptionPricingResponse) {}
+}
+
+message ScholesOptionPricingRequest {
+    double underlying_price = 1;
+    double strike_price = 2;
+    double time_to_expiration = 3;
+    double risk_free_interest_rate = 4;
+    double volatility = 5;
+}
+
+message ScholesOptionPricingResponse {
+    double option_price = 1;
+}
+
+message HestonOptionPricingRequest {
+    double underlying_price = 1;
+    double strike_price = 2;
+    double time_to_expiration = 3;
+    double risk_free_interest_rate = 4;
+    double initial_volatility = 5;
+    // Additional parameters specific to the Heston model
+    double mean_reversion_rate = 6;
+    double volatility_of_volatility = 7;
+    double correlation = 8;
+}
+
+message HestonOptionPricingResponse {
+    double option_price = 1;
+}
+
+message VarianceGammaOptionPricingRequest {
+    double underlying_price = 1;
+    double strike_price = 2;
+    double time_to_expiration = 3;
+    double risk_free_interest_rate = 4;
+    // Parameters specific to the Variance Gamma model
+    double drift_rate = 5;
+    double volatility = 6;
+    double mean_reversion_parameter = 7;
+    double jump_intensity = 8;
+    double jump_size_distribution = 9;
+}
+
+message VarianceGammaOptionPricingResponse {
+    double option_price = 1;
+}
