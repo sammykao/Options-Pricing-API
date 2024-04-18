@@ -5,6 +5,7 @@ This repository contains an API server implemented in C++ using gRPC for pricing
 ## What is gRPC?
 
 gRPC is a high-performance, open-source RPC (Remote Procedure Call) framework developed by Google. It uses Protocol Buffers as the interface definition language (IDL) for defining services and message types. gRPC provides features such as bi-directional streaming, authentication, and load balancing, making it suitable for building efficient distributed systems.
+
 ![image](https://github.com/sammykao/Options-Pricing-API/assets/123334119/51a4024e-ce0f-4f0a-b2a2-b1d21d3a71b5)
 
 
