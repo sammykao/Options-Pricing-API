@@ -51,16 +51,20 @@ Before running the server, ensure you have the following prerequisites installed
 ```bash
 git clone https://github.com/your_username/options-api.git
 cd options-api
-
+```
 
 ## Resources
 
 Here are some helpful resources for learning more about financial options pricing, gRPC, and related topics:
 
 - **Financial Options Pricing**:
-  - [Investopedia - Options Basics](https://www.investopedia.com/options-basics-tutorial-4689753)
-  - [Wikipedia - Black-Scholes Model](https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_model)
-  - [Quantitative Finance Stack Exchange](https://quant.stackexchange.com/)
+  - Black-Scholes Versus Heston Option Models Pricing Paper by Hsin-Fang Wu:
+      - https://digitalcommons.bard.edu/cgi/viewcontent.cgi?article=1212&context=senproj_s2019
+  - NYU Engineering Variance Gamma Model Paper:
+      - https://engineering.nyu.edu/sites/default/files/2018-09/CarrEuropeanFinReview1998.pdf
+  - Heston Model Formula:
+      - https://quant.stackexchange.com/questions/18684/heston-model-option-price-formula#:~:text=The%20Heston%20model%20is%20given,Wt%3D%CF%81dt.
+  - https://fastercapital.com/content/Comparing-Option-Pricing-Models--Beyond-Black-Scholes.html
 
 - **gRPC**:
   - [gRPC Official Documentation](https://grpc.io/docs/)
@@ -71,8 +75,5 @@ Here are some helpful resources for learning more about financial options pricin
   - [QuantLib - Open-source Library for Quantitative Finance](https://www.quantlib.org/)
   - [PyQuant - Python Library for Quantitative Finance](https://github.com/ranaroussi/pyquant)
 
-- **Books**:
-  - ["Options, Futures, and Other Derivatives" by John C. Hull](https://www.amazon.com/Options-Futures-Other-Derivatives-10th/dp/013447208X)
-  - ["Introduction to Quantitative Finance" by Paul Wilmott](https://www.amazon.com/Introduction-Quantitative-Finance-Paul-Wilmott/dp/0470018704)
 
 Feel free to add more resources or categories as needed. These links can provide additional context and guidance for understanding financial options pricing, gRPC, and related topics.
